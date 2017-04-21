@@ -1,0 +1,604 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/dominikwilkowski/cfonts">cfonts (v1.1.2)</a>
+</h1>
+<h4>Sexy fonts for the console</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cfonts">module cfonts</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">cfonts.</span>DEBUG</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cfonts.render">
+            function <span class="apidocSignatureSpan">cfonts.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cfonts.say">
+            function <span class="apidocSignatureSpan">cfonts.</span>say
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cfonts.</span>DEBUGLEVEL</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cfonts.</span>ALIGNMENT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cfonts.</span>BGCOLORS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cfonts.</span>COLORS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cfonts.</span>FONTFACE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cfonts.</span>FONTFACES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cfonts.</span>OPTIONS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cfonts.</span>debugging</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cfonts.</span>log</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cfonts.debugging">module cfonts.debugging</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cfonts.debugging.error">
+            function <span class="apidocSignatureSpan">cfonts.debugging.</span>error
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cfonts.debugging.headline">
+            function <span class="apidocSignatureSpan">cfonts.debugging.</span>headline
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cfonts.debugging.interaction">
+            function <span class="apidocSignatureSpan">cfonts.debugging.</span>interaction
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cfonts.debugging.received">
+            function <span class="apidocSignatureSpan">cfonts.debugging.</span>received
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cfonts.debugging.report">
+            function <span class="apidocSignatureSpan">cfonts.debugging.</span>report
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cfonts.debugging.send">
+            function <span class="apidocSignatureSpan">cfonts.debugging.</span>send
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cfonts.log">module cfonts.log</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cfonts.log.error">
+            function <span class="apidocSignatureSpan">cfonts.log.</span>error
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cfonts" id="apidoc.module.cfonts">module cfonts</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.cfonts.render" id="apidoc.element.cfonts.render">
+        function <span class="apidocSignatureSpan">cfonts.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+			var INPUT = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : '';
+			var SETTINGS = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
+
+			CFonts.debugging.report('Running render', 1);
+
+			var write = ''; //output in a string
+			var output = []; //output in an array
+			var lines = 0; //count each line
+
+			//SETTINGS
+			CFonts.OPTIONS = { //SETTINGS and defaults
+				font: SETTINGS.font || 'block',
+				align: SETTINGS.align || 'left',
+				colors: SETTINGS.colors || [],
+				background: ChangeCase.upperCaseFirst(SETTINGS.background) || 'Black',
+				letterSpacing: SETTINGS.letterSpacing === undefined ? 1 : SETTINGS.letterSpacing,
+				lineHeight: SETTINGS.lineHeight === undefined ? 1 : parseInt(SETTINGS.lineHeight),
+				space: SETTINGS.space === undefined ? true : SETTINGS.space,
+				maxLength: SETTINGS.maxLength || 0
+			};
+
+			//CHECKING INPUT
+			if (INPUT === undefined || INPUT === '') {
+				CFonts.log.error('Please provide text to convert');
+
+				process.exit(1); //exit program with failure code
+			}
+
+			//CHECKING FONT
+			if (CFonts.FONTFACES.indexOf(CFonts.OPTIONS.font) === -1) {
+				CFonts.log.error('"' + Chalk.red(SETTINGS.font) + '" is not a valid font option.\n' + ('Please use a font from the supported
+ stack:\n' + Chalk.green('[ ' + CFonts.FONTFACES.join(' | ') + ' ]')));
+
+				process.exit(1); //exit program with failure code
+			}
+
+			//CHECKING COLORS
+			for (var color in CFonts.OPTIONS.colors) {
+				//check color usage
+				if (CFonts.COLORS.indexOf(CFonts.OPTIONS.colors[color]) === -1 &amp;&amp; CFonts.OPTIONS.colors[color] !== 'candy') {
+					CFonts.log.error('"' + Chalk.red(CFonts.OPTIONS.colors[color]) + '" is not a valid font color option.\n' + ('Please use a color
+ from the supported stack:\n' + Chalk.green('[ ' + CFonts.COLORS.join(' | ') + ' | candy ]')));
+
+					process.exit(1); //exit program with failure code
+				}
+			}
+
+			//CHECKING BACKGROUND COLORS
+			if (CFonts.BGCOLORS.indexOf(CFonts.OPTIONS.background.toLowerCase()) === -1) {
+				CFonts.log.error('"' + Chalk.red(CFonts.OPTIONS.background) + '" is not a valid background option.\n' + ('Please use a color
+ from the supported stack:\n' + Chalk.green('[ ' + CFonts.BGCOLORS.join(' | ') + ' ]')));
+
+				process.exit(1); //exit program with failure code
+			}
+
+			//CHECKING ALIGNMENT
+			if (CFonts.ALIGNMENT.indexOf(CFonts.OPTIONS.align) === -1) {
+				CFonts.log.error('"' + Chalk.red(CFonts.OPTIONS.align) + '" is not a valid alignment option.\n' + ('Please use an alignment
+option from the supported stack:\n' + Chalk.green('[ ' + CFonts.ALIGNMENT.join(' | ') + ' ]')));
+
+				process.exit(1); //exit program with failure code
+			}
+
+			//DEBUG
+			if (CFonts.DEBUG) {
+				//log options
+				var outOption = 'OPTIONS:\n  Text: ' + INPUT;
+
+				for (var key in CFonts.OPTIONS) {
+					outOption += '\n  Options.' + key + ': ' + CFonts.OPTIONS[key];
+				}
+
+				CFonts.debugging.report(outOption, 2);
+			}
+
+			if (CFonts.OPTIONS.font === 'console') {
+				//console fontface is pretty easy to process
+				var outputLines = INPUT.replace('\\', '').split('|'); //remove escape characters and split into each line
+
+				CFonts.FONTFACE.colors = 1; //console defaults
+				CFonts.FONTFACE.lines = 1;
+
+				for (var line in outputLines) {
+					//each line needs to be pushed into the output array
+					lines += Math.ceil(outputLines[line].length / WinSize.width); //count each line even when they overflow
+
+					if (CFonts.OPTIONS.colors[0] === "candy") {
+						//if the color is candy
+						var character = '';
+
+						for (var i = 0; i &lt; outputLines[line].length; i++) {
+							//iterate through the message
+							character += Colorize(outputLines[line][i]); //and colorize each character individually
+						}
+
+						output.push(character); //push each line to the output array
+					} else {
+						output.push(Colorize(outputLines[line])); //colorize line
+					}
+
+					output = AlignText(output, outputLines[line].length); //calculate alignment based on lineLength
+				}
+			} else {
+				//all other fontfaces need the font-file and some more work
+				Ge ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+_All settings are optional and shown here with their default_
+
+You can use CFonts in your project without the direct output to the console:
+
+```js
+const CFonts = require('cfonts');
+
+const prettyFont = CFonts.<span class="apidocCodeKeywordSpan">render</span>('Hello|world!', {/* same settings object as
+ above */});
+
+prettyFont.string //the ansi string for sexy console font
+prettyFont.array //returns the array for the output
+prettyFont.lines //returns the lines used
+prettyFont.options //returns the options used
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cfonts.say" id="apidoc.element.cfonts.say">
+        function <span class="apidocSignatureSpan">cfonts.</span>say
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function say() {
+			var INPUT = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : '';
+			var SETTINGS = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
+
+			CFonts.debugging.report('Running say', 1);
+
+			var write = CFonts.render(INPUT, SETTINGS);
+
+			console.log(write.string); //write out
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+_Remember to escape the `!` character with `\` in the shell_
+
+Or use it in your project:
+
+```js
+const CFonts = require('cfonts');
+
+CFonts.<span class="apidocCodeKeywordSpan">say</span>('Hello|world!', {
+	font: 'block',        //define the font face
+	align: 'left',        //define text alignment
+	colors: ['white'],    //define all colors
+	background: 'Black',  //define the background color
+	letterSpacing: 1,     //define letter spacing
+	lineHeight: 1,        //define the line height
+	space: true,          //define if the output text should have empty lines on top and on the bottom
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cfonts.debugging" id="apidoc.module.cfonts.debugging">module cfonts.debugging</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cfonts.debugging.error" id="apidoc.element.cfonts.debugging.error">
+        function <span class="apidocSignatureSpan">cfonts.debugging.</span>error
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function error(text) {
+				var level = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : 99;
+
+				if (CFonts.DEBUG &amp;&amp; level &gt;= CFonts.DEBUGLEVEL) {
+					console.log(Chalk.bgWhite('\n' + Chalk.red(' \u2612  ') + ' ' + Chalk.black(text + ' ')));
+				}
+			}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+			var fontFile = __dirname + '/fonts/' + font + '.json'; //build font path
+			var FONTFACE = JSON.parse(Fs.readFileSync(fontFile, 'utf8')); //read font file
+
+			CFonts.debugging.report('GetFont: Fontface path selected: "' + fontFile + '"', 2);
+
+			CFonts.FONTFACE = FONTFACE;
+		} catch (error) {
+			CFonts.debugging.<span class="apidocCodeKeywordSpan">error</span>('Font file for "' + font + '" errored
+ out: ' + error, 2);
+
+			CFonts.log.error('Font file for "' + font + '" failed to connect to us.\nTry reinstalling this package
+.');
+
+			process.exit(1); //exit program with failure code
+		}
+	};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cfonts.debugging.headline" id="apidoc.element.cfonts.debugging.headline">
+        function <span class="apidocSignatureSpan">cfonts.debugging.</span>headline
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function headline(text) {
+				var level = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : 99;
+
+				if (CFonts.DEBUG &amp;&amp; level &gt;= CFonts.DEBUGLEVEL) {
+					console.log(Chalk.bgWhite('\n' + Chalk.bold(' \u2611  ') + ' ' + text));
+				}
+			}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cfonts.debugging.interaction" id="apidoc.element.cfonts.debugging.interaction">
+        function <span class="apidocSignatureSpan">cfonts.debugging.</span>interaction
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function interaction(text) {
+				var level = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : 99;
+
+				if (CFonts.DEBUG &amp;&amp; level &gt;= CFonts.DEBUGLEVEL) {
+					console.log(Chalk.bgWhite('\n' + Chalk.blue(' \u261C  ') + ' ' + Chalk.black(text + ' ')));
+				}
+			}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cfonts.debugging.received" id="apidoc.element.cfonts.debugging.received">
+        function <span class="apidocSignatureSpan">cfonts.debugging.</span>received
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function received(text) {
+				var level = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : 99;
+
+				if (CFonts.DEBUG &amp;&amp; level &gt;= CFonts.DEBUGLEVEL) {
+					console.log(Chalk.bgWhite('\n' + Chalk.bold.cyan(' \u219C  ') + ' ' + Chalk.black(text + ' ')));
+				}
+			}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cfonts.debugging.report" id="apidoc.element.cfonts.debugging.report">
+        function <span class="apidocSignatureSpan">cfonts.debugging.</span>report
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function report(text) {
+				var level = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : 99;
+
+				if (CFonts.DEBUG &amp;&amp; level &gt;= CFonts.DEBUGLEVEL) {
+					console.log(Chalk.bgWhite('\n' + Chalk.bold.green(' \u2611  ') + ' ' + Chalk.black(text + ' ')));
+				}
+			}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// Private function
+	// GetFont, Get and set a selected JSON font-file object into global namespace
+	//
+	// @param  font  {string}  The name of the font to be returned
+	//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+	var GetFont = function GetFont(font) {
+		CFonts.debugging.<span class="apidocCodeKeywordSpan">report</span>('Running GetFont', 1);
+
+		//try loading the font file
+		try {
+			var fontFile = __dirname + '/fonts/' + font + '.json'; //build font path
+			var FONTFACE = JSON.parse(Fs.readFileSync(fontFile, 'utf8')); //read font file
+
+			CFonts.debugging.report('GetFont: Fontface path selected: "' + fontFile + '"', 2);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cfonts.debugging.send" id="apidoc.element.cfonts.debugging.send">
+        function <span class="apidocSignatureSpan">cfonts.debugging.</span>send
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function send(text) {
+				var level = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : 99;
+
+				if (CFonts.DEBUG &amp;&amp; level &gt;= CFonts.DEBUGLEVEL) {
+					console.log(Chalk.bgWhite('\n' + Chalk.bold.cyan(' \u219D  ') + ' ' + Chalk.black(text + ' ')));
+				}
+			}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cfonts.log" id="apidoc.module.cfonts.log">module cfonts.log</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cfonts.log.error" id="apidoc.element.cfonts.log.error">
+        function <span class="apidocSignatureSpan">cfonts.log.</span>error
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function error(text) {
+				text = text.replace(/(?:\r\n|\r|\n)/g, '\n       '); //indent each line
+
+				console.log('\n ' + Chalk.bold.red('Ouch:') + ' ' + text + '\n');
+			}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+			var fontFile = __dirname + '/fonts/' + font + '.json'; //build font path
+			var FONTFACE = JSON.parse(Fs.readFileSync(fontFile, 'utf8')); //read font file
+
+			CFonts.debugging.report('GetFont: Fontface path selected: "' + fontFile + '"', 2);
+
+			CFonts.FONTFACE = FONTFACE;
+		} catch (error) {
+			CFonts.debugging.<span class="apidocCodeKeywordSpan">error</span>('Font file for "' + font + '" errored
+ out: ' + error, 2);
+
+			CFonts.log.error('Font file for "' + font + '" failed to connect to us.\nTry reinstalling this package
+.');
+
+			process.exit(1); //exit program with failure code
+		}
+	};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
